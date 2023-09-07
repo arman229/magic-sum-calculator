@@ -16,7 +16,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import MenuIcon from '@mui/icons-material/Menu'
-import birthday from './image/birthday.jpeg'
+import birthday from './image/imageslog.png'
 
 
 const AppBarExample = () => {
@@ -38,9 +38,9 @@ const AppBarExample = () => {
                         <img
                             src={birthday}
                             style={{ height: "40px", width: "40px", borderRadius: "40%", padding: "5px" }}
-                        />
+                        alt="not shows " />
                     </IconButton>
-                    <Typography variant="h6">Weather App</Typography>
+                    <Typography variant="h6">Magic Calculator </Typography>
                 </div>
                 <div className={'links'}>
                     <Hidden smDown>

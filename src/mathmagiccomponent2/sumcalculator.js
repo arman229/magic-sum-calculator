@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './sumcalculator.css'
-import {TextField, Typography} from "@mui/material";
-import {Container, Button,Grid} from '@mui/material';
+import {  Typography} from "@mui/material";
+import {  Button,Grid} from '@mui/material';
 import AppBarExample from "./headerfooter/header";
 import Footer from "./headerfooter/footer";
 
@@ -88,12 +88,13 @@ export const Mysummagicgames = () => {
     return (
         <div  >
         <AppBarExample/>
-        <Grid classname="mycontainer" container style={{marginLeft: "auto", marginRight: "auto", padding:"50px 0px" ,  }}>
+        <div style={{display:'flex',justifyContent:"space-between", flexDirection:"column",height:"90vh" }}>
+        <Grid classname="mycontainer" container style={{marginLeft: "auto", marginRight: "auto", padding:"50px 0px" ,gridGap: "20px",   flexGrow: "1",display:"flex" ,maxWidth:"1000px"}}>
 
 
             <div id="firstsubcontainer">
                 <
-                Typography variant="h5" style={{backgroundColor: "#7885cb", padding: "10px"}}>
+                Typography variant="h5" style={{backgroundColor: "#7885cb", padding: "10px",color:"whitesmoke"}}>
                 Magic Game Instructions:
             </Typography>
                 <div style={{padding:"6px"}}>
@@ -127,7 +128,7 @@ export const Mysummagicgames = () => {
 
             <div id="secondsubcontainer">
 
-                <Button   onClick={handleRestartClick} style={{width:"100%",backgroundColor: "#7885cb",}}   size="large" variant="contained">Restart / Play again</Button>
+                <Button   onClick={handleRestartClick} style={{width:"100%",backgroundColor: "#7885cb" ,fontSize:"1.2rem",color:"whitesmoke"}}   size="large" variant="contained">Restart / Play again</Button>
                 <div>
 
                     <div>
@@ -496,7 +497,7 @@ export const Mysummagicgames = () => {
                 </div>
             </div>
         </Grid>
-            <Footer/>
+            <Footer/></div>
         </div>
     )
 }
